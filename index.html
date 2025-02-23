@@ -18,6 +18,13 @@
             {% endif %}
         </section>
     </main>
+    <script>
+        document.getElementById('multiplyForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const number = document.getElementById('number').value;
+            const result = number * 10;
+            document.getElementById('result').textContent = 'Result: ' + result;
+        });
+    </script>
 </body>
 </html>
-
